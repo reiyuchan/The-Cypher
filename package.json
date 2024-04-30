@@ -4,7 +4,6 @@
   "private": true,
   "version": "0.5.0",
   "type": "module",
-  "author": "reiyuchan & darsh",
   "main": "electron.cjs",
   "scripts": {
     "dev": "vite",
