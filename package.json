@@ -1,6 +1,6 @@
 {
   "name": "the-cypher",
-  "description": "A cryptography app using playfair and Transposition methods",
+  "description": "A cryptography app using Playfair and Transposition methods",
   "private": true,
   "version": "0.5.0",
   "type": "module",
