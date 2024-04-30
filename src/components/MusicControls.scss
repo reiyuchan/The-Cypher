@@ -1,0 +1,46 @@
+.controls {
+    align-self: end;
+    width: 2rem;
+    height: 2rem;
+    &:hover {
+        transform: scale(1.3);
+    }
+    &:active {
+        transform: scale(1);
+    }
+}
+
+.music {
+    align-self: end;
+    &:hover {
+        box-shadow: 0 0 5px 2px white;
+        border-radius: 100%;
+    }
+    &.anim {
+        animation-name: inf-rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+}
+
+.line {
+    background: white;
+    color: white;
+    width: 2.5rem;
+    height: 2px;
+    transform: rotate(-45deg);
+    align-self: end;
+    position: relative;
+    bottom: 1.4rem;
+    right: 0.3rem;
+}
+
+@keyframes inf-rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

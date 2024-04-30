@@ -1,0 +1,13 @@
+.text-box {
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  font-size: large;
+  width: 100%;
+  padding: 5px;
+  border: 4px solid #5f59f7;
+  &:focus {
+    border: 4px solid #6592fd;
+    outline: none;
+  }
+}

@@ -1,0 +1,61 @@
+$tablet-screen: 768px;
+$mobile-screen: 480px;
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  &.shadow {
+    box-shadow: 1px 1px 5px 3px white;
+  }
+  &.main {
+    background: #343090;
+    padding: 3rem;
+    border-radius: 8px;
+  }
+  &.anim {
+    animation-name: fade;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @media screen and (max-width: $mobile-screen) {
+    width: 70%  
+  }
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

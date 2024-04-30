@@ -1,0 +1,13 @@
+.btn {
+  background: #5f59f7;
+  font-weight: bold;
+  &:hover {
+    border-color: #44c2fd;
+  }
+  &:active {
+    background: #6592fd;
+  }
+  &:focus {
+    outline: none;
+  }
+}
