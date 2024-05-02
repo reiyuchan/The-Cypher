@@ -17,7 +17,7 @@ function createWindow() {
   })
   // and load the index.html of the app.
   console.log(__dirname)
-  mainWindow.loadURL(path.join(__dirname, '/dist/index.html'))
+  mainWindow.loadFile(path.join(__dirname, '/dist/index.html'))
 }
 
 // This method will be called when Electron has finished
